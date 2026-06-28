@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frederico Assmann | Formação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- ===== NAVEGAÇÃO FIXA — igual em todas as páginas ===== -->
+    <nav>
+        <div class="nav-container">
+            <span class="nav-logo">Frederico Assmann</span>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <!-- "ativo" marca a página atual no menu -->
+                <li><a href="formacao.html" class="ativo">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><button id="btn-tema" onclick="alternarTema()">🌙 Escuro</button></li>
+            </ul>
+
+            <!-- Botão hamburguer para mobile -->
+            <button id="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== CONTEÚDO: FORMAÇÃO ===== -->
+    <main>
+        <section class="pagina-conteudo">
+            <div class="container">
+                <h1 class="section-title">Formação</h1>
+                <div class="section-divider"></div>
+
+                <!-- Formação acadêmica -->
+                <h2 class="formacao-subtitulo">🎓 Formação Acadêmica</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <h3>Bacharelado em Engenharia de Software</h3>
+                        <p class="instituicao">UNINTER – Centro Universitário Internacional</p>
+                        <p class="periodo">03/2025 – Em andamento</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Bacharelado em Engenharia Mecânica</h3>
+                        <p class="instituicao">UNINTER – Centro Universitário Internacional</p>
+                        <p class="periodo">07/2025 – Em andamento</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Ensino Médio Completo</h3>
+                        <p class="instituicao">Escola de Educação Básica Educar-se</p>
+                        <p class="periodo">Concluído</p>
+                    </div>
+
+                </div>
+
+                <!-- Experiência profissional -->
+                <h2 class="formacao-subtitulo">💼 Experiência Profissional</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <h3>Assistente de Suprimentos</h3>
+                        <p class="instituicao">Sulprint Embalagens Industriais</p>
+                        <p class="periodo">03/2026 – Atual</p>
+                        <p>
+                            Responsável por compras indiretas (MRO), gestão de frota de veículos,
+                            planejamento e aquisição de insumos para embalagens e análise de laudos
+                            de qualidade.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Assistente Administrativo</h3>
+                        <p class="instituicao">Sacyr Construccion S/A do Brasil</p>
+                        <p class="periodo">02/2025 – 02/2026</p>
+                        <p>
+                            Controle de notas fiscais, gestão de telemetria de equipamentos,
+                            monitoramento de custos de diesel, manutenção e materiais de desgaste.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Auxiliar Administrativo</h3>
+                        <p class="instituicao">Câmara de Vereadores de Santa Cruz do Sul</p>
+                        <p class="periodo">01/2024 – 12/2024</p>
+                        <p>
+                            Tramitação interna de documentos, apoio ao setor administrativo,
+                            atendimento ao público, arquivo e digitação.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Voluntariado – Apoio em Matemática</h3>
+                        <p class="instituicao">Escola de Educação Básica Educar-se</p>
+                        <p class="periodo">04/2023 – 07/2023</p>
+                        <p>
+                            Suporte educacional individualizado a alunos do 6º ano com dificuldades
+                            na disciplina de Matemática.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Auxiliar Financeiro de Comércio Exterior</h3>
+                        <p class="instituicao">AD Shipping Ltda.</p>
+                        <p class="periodo">09/2022 – 05/2023</p>
+                        <p>
+                            Controle administrativo e financeiro, conferência de planilhas e
+                            inclusão de bookings no sistema.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Idiomas -->
+                <h2 class="formacao-subtitulo">🌐 Idiomas</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <h3>Inglês Intermediário</h3>
+                        <p class="instituicao">Wizard by Pearson – Presencial</p>
+                        <p class="periodo">03/2019 – 07/2023 · 300 horas</p>
+                    </div>
+
+                </div>
+
+                <!-- Cursos e certificados -->
+                <h2 class="formacao-subtitulo">📋 Cursos e Certificados</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <h3>Desenhista Mecânico</h3>
+                        <p class="instituicao">SENAI – Presencial</p>
+                        <p class="periodo">07/2023 – 01/2024 · 400 horas</p>
+                        <p>
+                            Elaboração de croquis e desenhos definitivos de peças e conjuntos
+                            mecânicos utilizando instrumentos de desenho e software de CAD,
+                            conforme normas técnicas.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Impactos das Redes Sociais no Perfil Profissional</h3>
+                        <p class="instituicao">SENAI – Presencial</p>
+                        <p class="periodo">11/2023 · 4 horas</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Organização do Ambiente de Trabalho</h3>
+                        <p class="instituicao">SENAI – Presencial</p>
+                        <p class="periodo">11/2023 · 4 horas</p>
+                    </div>
+
+                </div>
+
+                <!-- Conquistas -->
+                <h2 class="formacao-subtitulo">🏆 Conquistas</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <h3>Menção Honrosa – Feira de Ciências UNISC</h3>
+                        <p class="periodo">11/2022</p>
+                        <p>
+                            Artigo científico intitulado "Educação ambiental: destinação adequada
+                            de resíduos eletrônicos", apresentado na Feira de Ciências da UNISC.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Destaque em Proatividade – Comércio Exterior</h3>
+                        <p class="instituicao">AD Shipping Ltda.</p>
+                        <p class="periodo">12/2022</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <p>© 2025 Frederico Cardoso Assmann · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frederico Assmann | Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- ===== NAVEGAÇÃO FIXA — igual em todas as páginas ===== -->
+    <nav>
+        <div class="nav-container">
+            <span class="nav-logo">Frederico Assmann</span>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <!-- "ativo" marca a página atual no menu -->
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+                <li><button id="btn-tema" onclick="alternarTema()">🌙 Escuro</button></li>
+            </ul>
+
+            <!-- Botão hamburguer para mobile -->
+            <button id="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== CONTEÚDO: CONTATO ===== -->
+    <main>
+        <section class="pagina-conteudo">
+            <div class="container">
+                <h1 class="section-title">Contato</h1>
+                <div class="section-divider"></div>
+
+                <p class="intro-texto">
+                    Quer conversar? Preencha o formulário abaixo e responderei o mais breve possível!
+                </p>
+
+                <!-- Formulário — validação feita pelo script.js -->
+                <div class="form-contato">
+
+                    <!-- Campo: Nome -->
+                    <div class="form-grupo">
+                        <label for="campo-nome">Nome *</label>
+                        <input
+                            type="text"
+                            id="campo-nome"
+                            placeholder="Seu nome completo"
+                        >
+                        <!-- Mensagem de erro exibida pelo JS quando campo inválido -->
+                        <span class="mensagem-erro" id="erro-nome">
+                            Por favor, informe seu nome.
+                        </span>
+                    </div>
+
+                    <!-- Campo: E-mail -->
+                    <div class="form-grupo">
+                        <label for="campo-email">E-mail *</label>
+                        <input
+                            type="email"
+                            id="campo-email"
+                            placeholder="seu@email.com"
+                        >
+                        <span class="mensagem-erro" id="erro-email">
+                            Informe um e-mail válido (ex: usuario@dominio.com).
+                        </span>
+                    </div>
+
+                    <!-- Campo: Mensagem -->
+                    <div class="form-grupo">
+                        <label for="campo-mensagem">Mensagem *</label>
+                        <textarea
+                            id="campo-mensagem"
+                            placeholder="Escreva sua mensagem aqui..."
+                        ></textarea>
+                        <span class="mensagem-erro" id="erro-mensagem">
+                            Por favor, escreva uma mensagem.
+                        </span>
+                    </div>
+
+                    <!-- Botão dispara a função enviarFormulario() do script.js -->
+                    <button id="btn-enviar" onclick="enviarFormulario()">Enviar mensagem</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== MODAL DE CONFIRMAÇÃO ===== -->
+    <!-- Aparece após envio bem-sucedido; JS adiciona classe .ativo para exibir -->
+    <div id="modal-overlay">
+        <div class="modal-caixa">
+            <div class="modal-icone">✅</div>
+            <h3>Mensagem enviada com sucesso!</h3>
+            <p>Obrigado pelo contato. Responderei o mais breve possível.</p>
+            <button id="btn-fechar-modal" onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <p>© 2025 Frederico Cardoso Assmann · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

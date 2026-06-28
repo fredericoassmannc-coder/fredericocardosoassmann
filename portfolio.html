@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frederico Assmann | Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- ===== NAVEGAÇÃO FIXA — igual em todas as páginas ===== -->
+    <nav>
+        <div class="nav-container">
+            <span class="nav-logo">Frederico Assmann</span>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <!-- "ativo" marca a página atual no menu -->
+                <li><a href="portfolio.html" class="ativo">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><button id="btn-tema" onclick="alternarTema()">🌙 Escuro</button></li>
+            </ul>
+
+            <!-- Botão hamburguer para mobile -->
+            <button id="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== CONTEÚDO: PORTFÓLIO ===== -->
+    <main>
+        <section class="pagina-conteudo">
+            <div class="container">
+                <h1 class="section-title">Portfólio</h1>
+                <div class="section-divider"></div>
+
+                <p class="intro-texto">
+                    Aqui estão alguns trabalhos, projetos e experiências que fazem parte da minha
+                    trajetória acadêmica e profissional:
+                </p>
+
+                <!-- Grade de cards de projetos -->
+                <div class="portfolio-grid">
+
+                    <!-- Card 1 -->
+                    <div class="portfolio-card">
+                        <div class="card-icon">♻️</div>
+                        <h3>Artigo Científico – Resíduos Eletrônicos</h3>
+                        <p>
+                            Artigo apresentado na Feira de Ciências da UNISC sobre educação ambiental
+                            e a destinação adequada de resíduos eletrônicos. Recebeu Menção Honrosa
+                            em novembro de 2022.
+                        </p>
+                        <a href="contato.html">Solicitar mais informações</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="portfolio-card">
+                        <div class="card-icon">🔧</div>
+                        <h3>Desenho Técnico Mecânico (CAD)</h3>
+                        <p>
+                            Desenvolvimento de habilidades em elaboração de desenhos técnicos e
+                            croquis de peças mecânicas utilizando software CAD, durante curso
+                            profissionalizante no SENAI (400 horas).
+                        </p>
+                        <a href="contato.html">Solicitar exemplos</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="portfolio-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Gestão de Suprimentos – Sulprint</h3>
+                        <p>
+                            Responsável por processos de compras indiretas (MRO), gestão de frota,
+                            planejamento de insumos e análise de laudos de qualidade na Sulprint
+                            Embalagens Industriais (2026 – atual).
+                        </p>
+                        <a href="contato.html">Entre em contato</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="portfolio-card">
+                        <div class="card-icon">🌐</div>
+                        <h3>Portfólio Online – Este Site</h3>
+                        <p>
+                            Desenvolvimento deste portfólio como atividade prática da disciplina de
+                            Fundamentos da Programação Web, utilizando HTML5, CSS3 e JavaScript puro,
+                            sem frameworks.
+                        </p>
+                        <a href="https://github.com" target="_blank">Ver no GitHub (em breve)</a>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="portfolio-card">
+                        <div class="card-icon">🏛️</div>
+                        <h3>Estágio – Câmara de Vereadores</h3>
+                        <p>
+                            Auxílio administrativo na Câmara de Vereadores de Santa Cruz do Sul,
+                            incluindo tramitação de documentos, arquivo e atendimento ao público
+                            durante o ano de 2024.
+                        </p>
+                        <a href="contato.html">Saiba mais</a>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="portfolio-card">
+                        <div class="card-icon">🚗</div>
+                        <h3>Gestão de Frota e Telemetria – Sacyr</h3>
+                        <p>
+                            Controle de telemetria de equipamentos, custos de manutenção, diesel
+                            e materiais de desgaste na Sacyr Construccion S/A do Brasil
+                            (02/2025 – 02/2026).
+                        </p>
+                        <a href="contato.html">Entre em contato</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <p>© 2025 Frederico Cardoso Assmann · Desenvolvido com HTML5, CSS3 e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
